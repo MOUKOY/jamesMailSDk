@@ -19,12 +19,6 @@ import com.fanpei.mail.entity.PageInfo;
 import com.fanpei.mail.entity.User;
 import com.fanpei.mail.util.SendAndGetMail;
 
-/**
- * 测试用例
- * 
- * @author MOUKOY
- *
- */
 class mailUtil {
 	static MailsImp mailUtil = null;
 	User fromU = new User("fanpei@zytm.com", "123");
@@ -88,7 +82,7 @@ class mailUtil {
 			List<User> secretUs = new ArrayList<>();
 			// secretUs.add(thirdU);
 			MailUsers users = new MailUsers(fromU, recvUs, null, secretUs);
-			MailContent message = new MailContent("测试", "你们都是好孩子");
+			MailContent message = new MailContent("测试邮件2", "你们都是好孩子");
 			message.cloneUsersInfo(users);
 
 			mailUtil.send(message);
@@ -129,14 +123,14 @@ class mailUtil {
 	// @Test
 	void MailFolder() {
 		try {
-			// 3.鍙戦�侀偖浠�
+			// 3.发送邮件
 			List<User> recvUs = new ArrayList<>();
 			recvUs.add(secU);
 			recvUs.add(thirdU);
 			List<User> secretUs = new ArrayList<>();
 			// secretUs.add(thirdU);
 			MailUsers users = new MailUsers(fromU, recvUs, null, secretUs);
-			MailContent message = new MailContent("测试", "你们都是好孩子");
+			MailContent message = new MailContent("测试邮件2", "你们都是好孩子");
 			message.cloneUsersInfo(users);
 			mailUtil.send(message);
 
@@ -153,27 +147,27 @@ class mailUtil {
 	@Test
 	void folder() {
 		try {
-			// 1.鏌ョ湅閭欢
+			// 1.查看邮件
 			PageInfo pageInfo = new PageInfo(1, 10);
 			Message[] mails1 = mailUtil.getMails(fromU, MailType.DRAF, pageInfo);
 			if (mails1 != null && mails1.length > 0) {
 				mailUtil.delete(thirdU, MailType.SEND, mails1);
 			}
-			// 2.鍒犻櫎鏂囦欢澶�
+			// 2.删除文件夹
 			SendAndGetMail.deleteAllFolders(fromU);
 
-			// 3.鍙戦�侀偖浠�
+			// 3.发送邮件
 			List<User> recvUs = new ArrayList<>();
 			recvUs.add(secU);
 			recvUs.add(thirdU);
 			List<User> secretUs = new ArrayList<>();
 			// secretUs.add(thirdU);
 			MailUsers users = new MailUsers(fromU, recvUs, null, secretUs);
-			MailContent message = new MailContent("测试", "你们都是好孩子");
+			MailContent message = new MailContent("测试邮件2", "你们都是好孩子");
 			message.cloneUsersInfo(users);
 			mailUtil.send(message);
 
-			// 4鏌ョ湅閭欢
+			// 4查看邮件
 			Message[] mails2 = mailUtil.getMails(thirdU, MailType.RECIVE, pageInfo);
 			if (mails2 != null && mails2.length > 0) {
 
