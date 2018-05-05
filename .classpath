@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry kind="lib" path="lib/jdmkrt.jar"/>
+	<classpathentry kind="lib" path="lib/james-server-data-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail.jar" sourcepath="D:/CloudServer/CompanyOA/doc/技术资料/邮件服务器/javamail-master/javamail-master"/>
+	<classpathentry kind="lib" path="lib/apache-james-mailbox-api-3.0.1.jar" sourcepath="D:/CloudServer/CompanyOA/doc/技术资料/邮件服务器/james-server-sources-3.0.1"/>
+	<classpathentry kind="lib" path="lib/apache-mailet-api-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/apache-mailet-base-3.0.1.jar" sourcepath="D:/CloudServer/CompanyOA/doc/技术资料/邮件服务器/james-server-sources-3.0.1"/>
+	<classpathentry kind="lib" path="lib/apache-mailet-standard-3.0.1.jar" sourcepath="D:/CloudServer/CompanyOA/doc/技术资料/邮件服务器/james-server-sources-3.0.1"/>
+	<classpathentry kind="lib" path="lib/apache-james-mailbox-store-3.0.1.jar" sourcepath="D:/CloudServer/CompanyOA/doc/技术资料/邮件服务器/james-server-sources-3.0.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
