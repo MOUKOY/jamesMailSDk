@@ -88,7 +88,7 @@ class mailUtil {
 			List<User> secretUs = new ArrayList<>();
 			// secretUs.add(thirdU);
 			MailUsers users = new MailUsers(fromU, recvUs, null, secretUs);
-			MailContent message = new MailContent("娴嬭瘯閭欢2", "浣犱滑閮芥槸濂藉瀛�");
+			MailContent message = new MailContent("测试", "你们都是好孩子");
 			message.cloneUsersInfo(users);
 
 			mailUtil.send(message);
@@ -136,7 +136,7 @@ class mailUtil {
 			List<User> secretUs = new ArrayList<>();
 			// secretUs.add(thirdU);
 			MailUsers users = new MailUsers(fromU, recvUs, null, secretUs);
-			MailContent message = new MailContent("娴嬭瘯閭欢2", "浣犱滑閮芥槸濂藉瀛�");
+			MailContent message = new MailContent("测试", "你们都是好孩子");
 			message.cloneUsersInfo(users);
 			mailUtil.send(message);
 
@@ -169,7 +169,7 @@ class mailUtil {
 			List<User> secretUs = new ArrayList<>();
 			// secretUs.add(thirdU);
 			MailUsers users = new MailUsers(fromU, recvUs, null, secretUs);
-			MailContent message = new MailContent("娴嬭瘯閭欢2", "浣犱滑閮芥槸濂藉瀛�");
+			MailContent message = new MailContent("测试", "你们都是好孩子");
 			message.cloneUsersInfo(users);
 			mailUtil.send(message);
 
